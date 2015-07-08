@@ -1,0 +1,14 @@
+#!/bin/bash
+#
+#	miniaturas para openscad
+
+
+
+E=$(echo $2 | sed 's/^file:\/\///g')
+EXT="$( echo $E | sed 's/^.*\.//g')"
+if [ "$EXT" == "stl" ]; then
+	T=$(mktemp --suffix=.scad)
+	echo "import(\"$E\");" > $T
+	E=$T
+fi
+/usr/bin/openscad --preview -o $(echo $1 | sed 's/^file:\/\///g') $E
