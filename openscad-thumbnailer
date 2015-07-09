@@ -12,3 +12,9 @@ if [ "$EXT" == "stl" ]; then
 	E=$T
 fi
 /usr/bin/openscad --preview -o $(echo $1 | sed 's/^file:\/\///g') $E
+convert $(echo $1 | sed 's/^file:\/\///g') \
+-trim \
+-transparent '#ffffe5' \
+-resize 196x196 \
+$(echo $1 | sed 's/^file:\/\///g')
+rm $T 2> /dev/null
