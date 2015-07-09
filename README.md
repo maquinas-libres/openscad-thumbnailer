@@ -1,6 +1,8 @@
 Miniaturas para 3D
 ==================
 
+![captura](captura.png)
+
 ~~~
 sudo cp openscad-thumbnailers /usr/local/bin/
 sudo cp openscad.thumbnailers /usr/share/thumbnailers/
