@@ -12,8 +12,8 @@ Para instalarlo abrimos una terminal y ponermos:
 wget https://github.com/maquinas-libres/openscad-thumbnailer/archive/master.zip
 unzip master.zip
 cd openscad-thumbnailer-master
-sudo cp openscad-thumbnailers /usr/local/bin/
-sudo cp openscad.thumbnailers /usr/share/thumbnailers/
+sudo cp openscad-thumbnailer /usr/local/bin/
+sudo cp openscad.thumbnailer /usr/share/thumbnailers/
 ~~~
 
 Ahora tenemos que reiniciar pcmanfm y listo:
